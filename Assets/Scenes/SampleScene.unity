@@ -856,6 +856,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -937,6 +938,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178e8baf1e2d85e4aa76ee70ebf6bb33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cubePrefab: {fileID: 5116662869842506861, guid: b4e1db209602d3744a510b1e93a7db4f, type: 3}
+  _spawnArea: {fileID: 580431421}
+  _repeatRate: 0.5
+  _poolCapasity: 5
+  _poolMaxSize: 5
 --- !u!1 &1036768244
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,7 +1278,6 @@ GameObject:
   - component: {fileID: 1629506318}
   - component: {fileID: 1629506317}
   - component: {fileID: 1629506316}
-  - component: {fileID: 1629506320}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -1358,23 +1375,6 @@ Transform:
   - {fileID: 23614063}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1629506320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629506315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 178e8baf1e2d85e4aa76ee70ebf6bb33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cubePrefab: {fileID: 5116662869842506861, guid: b4e1db209602d3744a510b1e93a7db4f, type: 3}
-  _spawnArea: {fileID: 580431421}
-  _repeatRate: 1
-  _poolCapasity: 5
-  _poolMaxSize: 5
 --- !u!1 &2019260823
 GameObject:
   m_ObjectHideFlags: 0
