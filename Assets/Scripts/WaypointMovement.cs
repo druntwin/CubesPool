@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WaypointMovement : MonoBehaviour
@@ -28,12 +26,8 @@ public class WaypointMovement : MonoBehaviour
 
         if(transform.position == target.position)
         {
-            _currentPointIndex++;
-
-            if( _currentPointIndex >= _points.Length)
-            {
-                _currentPointIndex = 0;
-            }
+            _currentPointIndex = ++_currentPointIndex % _points.Length;
+            Debug.Log(_currentPointIndex);            
         }
     }
 }
