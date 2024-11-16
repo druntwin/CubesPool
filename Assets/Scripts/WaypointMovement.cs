@@ -26,8 +26,7 @@ public class WaypointMovement : MonoBehaviour
 
         if(transform.position == target.position)
         {
-            _currentPointIndex = ++_currentPointIndex % _points.Length;
-            Debug.Log(_currentPointIndex);            
+            _currentPointIndex = ++_currentPointIndex % _points.Length;           
         }
     }
 }
